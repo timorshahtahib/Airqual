@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tahib.airqual"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    package="com.tahib.oxygen"
+    android:versionCode="5"
+    android:versionName="1.0.3" >
 
     <uses-sdk
         android:minSdkVersion="24"
@@ -12,18 +12,21 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name="com.tahib.airqual.data.Airqual"
+        android:name="com.tahib.oxygen.data.Airqual"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
-        android:icon="@mipmap/pollen_launcher"
+        android:icon="@mipmap/new_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/new_logo_round"
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.tahib.airqual.ui.MainActivity"
+            android:name="com.tahib.oxygen.ui.Information"
+            android:exported="false" />
+        <activity
+            android:name="com.tahib.oxygen.ui.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,7 +35,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.tahib.airqual.ui.Splash"
+            android:name="com.tahib.oxygen.ui.Splash"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -40,11 +43,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.tahib.airqual.ui.CitiesActivity" />
-        <activity android:name="com.tahib.airqual.ui.DetailActivity" />
+        <activity android:name="com.tahib.oxygen.ui.DetailActivity" />
+        <activity android:name="com.tahib.oxygen.ui.StepperWizardLight" />
 
         <receiver
-            android:name="com.tahib.airqual.util.ConnectivityReceiver"
+            android:name="com.tahib.oxygen.util.ConnectivityReceiver"
             android:enabled="true"
             android:exported="true" >
             <intent-filter>
@@ -54,7 +57,7 @@
 
         <provider
             android:name="com.squareup.picasso.PicassoProvider"
-            android:authorities="com.tahib.airqual.com.squareup.picasso"
+            android:authorities="com.tahib.oxygen.com.squareup.picasso"
             android:exported="false" />
     </application>
 

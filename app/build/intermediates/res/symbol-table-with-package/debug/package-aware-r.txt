@@ -1,4 +1,4 @@
-com.tahib.airqual
+com.tahib.oxygen
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -418,6 +418,18 @@ attr maxButtonHeight
 attr maxImageSize
 attr measureWithLargestChild
 attr menu
+attr mrl_rippleAlpha
+attr mrl_rippleBackground
+attr mrl_rippleColor
+attr mrl_rippleDelayClick
+attr mrl_rippleDimension
+attr mrl_rippleDuration
+attr mrl_rippleFadeDuration
+attr mrl_rippleHover
+attr mrl_rippleInAdapter
+attr mrl_rippleOverlay
+attr mrl_ripplePersistent
+attr mrl_rippleRoundedCorners
 attr multiChoiceItemLayout
 attr navigationContentDescription
 attr navigationIcon
@@ -665,9 +677,17 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color green_400
+color grey_10
+color grey_1000
+color grey_20
+color grey_40
+color grey_5
+color grey_60
+color grey_80
+color grey_90
 color highlighted_text_material_dark
 color highlighted_text_material_light
-color ic_launcher_background
 color jaune
 color jauneToolbar
 color marron
@@ -712,6 +732,7 @@ color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
 color orange
+color orange_400
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -735,6 +756,7 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color tooltip_background_dark
 color tooltip_background_light
+color transparent
 color vert
 color violet
 dimen abc_action_bar_content_inset_material
@@ -812,6 +834,7 @@ dimen abc_text_size_subhead_material
 dimen abc_text_size_subtitle_material_toolbar
 dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
+dimen appbar_padding_top
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
@@ -944,6 +967,19 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen spacing_large
+dimen spacing_medium
+dimen spacing_middle
+dimen spacing_mlarge
+dimen spacing_mxlarge
+dimen spacing_small
+dimen spacing_smlarge
+dimen spacing_xlarge
+dimen spacing_xmedium
+dimen spacing_xmlarge
+dimen spacing_xsmall
+dimen spacing_xxlarge
+dimen spacing_xxxlarge
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -1038,21 +1074,27 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable circle_shape
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
-drawable ic_launcher_background
-drawable ic_launcher_foreground
+drawable ic_close
+drawable ic_info
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable icons8_chevron_droit_48
+drawable imag1
+drawable image2
+drawable image3
+drawable image4
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable new_logo_background
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -1065,7 +1107,10 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable shape_circle
 drawable splash
+drawable tbl_info_eng
+drawable tble_info
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
@@ -1085,6 +1130,7 @@ id action_container
 id action_context_bar
 id action_divider
 id action_image
+id action_info
 id action_menu_divider
 id action_menu_presenter
 id action_mode_bar
@@ -1104,7 +1150,10 @@ id barrier
 id beginning
 id blocking
 id bottom
+id bt_close
+id btn_next
 id buttonPanel
+id cardView
 id center
 id center_horizontal
 id center_vertical
@@ -1122,6 +1171,7 @@ id custom
 id customPanel
 id decor_content_parent
 id default_activity_button
+id description
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -1147,6 +1197,7 @@ id fixed
 id forever
 id gauge2
 id ghost_view
+id glide_custom_view_target_tag
 id gone
 id group_divider
 id groups
@@ -1157,19 +1208,21 @@ id icon
 id icon_group
 id ifRoom
 id image
-id imageView
+id img_info
 id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
 id labeled
 id largeLabel
+id layoutDots
 id left
 id line1
 id line3
 id listMode
 id list_item
 id lottie_layer_name
+id lyt_parent
 id masked
 id message
 id middle
@@ -1180,6 +1233,7 @@ id multiply
 id my_recycler_view
 id my_recycler_view_2
 id navigation_header_container
+id nested_scroll_view
 id never
 id none
 id normal
@@ -1255,8 +1309,8 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
-id textView
 id textView2
+id textView3
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1266,8 +1320,6 @@ id title
 id titleDividerNoCustom
 id title_template
 id toolbar
-id toolbar2
-id toolbar3
 id top
 id topPanel
 id touch_outside
@@ -1281,11 +1333,13 @@ id tv_hu
 id tv_pr
 id tv_tp
 id tv_ws
+id txt_aqi_name
 id uniform
 id unlabeled
 id up
 id useLogo
 id view_offset_helper
+id view_pager
 id visible
 id weather_icon
 id withText
@@ -1338,8 +1392,10 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_information
 layout activity_main
 layout activity_splash
+layout activity_stepper_wizard_light
 layout activitycities
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1355,9 +1411,11 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
-layout details_city
+layout item_stepper_wizard
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
+layout new_row
+layout newdetail
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -1369,11 +1427,13 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
-mipmap ic_launcher
-mipmap ic_launcher_foreground
-mipmap ic_launcher_round
-mipmap pollen_launcher
-mipmap pollen_launcher_round
+menu menu_main
+menu menu_search_setting
+mipmap new_logo
+mipmap new_logo_foreground
+mipmap new_logo_round
+string GOT_IT
+string NEXT
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -1418,19 +1478,43 @@ string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_pattern
+string des1
+string des2
+string des3
+string des4
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string good
+string hazar
 string hide_bottom_view_on_scroll_behavior
+string hpa
+string humidity
+string info_titele
+string info_txt_1
+string info_txt_2
+string km
+string loding
+string moderate
 string mtrl_chip_close_icon_content_description
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string percent
 string powered_by_gccf_afghanistan
+string pression
 string search_menu_title
 string status_bar_notification_info_overflow
-string today_air_quality
+string temperature
+string titile4
+string title1
+string title2
+string title3
+string unhelty
+string unhelty_sensetiv
+string ver_unhelty
+string wind
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
@@ -1438,6 +1522,7 @@ style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style AppTheme
+style AppTheme_AppBarOverlay
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
@@ -1644,6 +1729,8 @@ style Platform_V21_AppCompat_Light
 style Platform_V25_AppCompat
 style Platform_V25_AppCompat_Light
 style Platform_Widget_AppCompat_Spinner
+style RippleStyleBlack
+style RippleStyleWhite
 style RtlOverlay_DialogWindowTitle_AppCompat
 style RtlOverlay_Widget_AppCompat_ActionBar_TitleItem
 style RtlOverlay_Widget_AppCompat_DialogTitle_Icon
@@ -1981,6 +2068,7 @@ styleable LottieAnimationView lottie_autoPlay lottie_cacheComposition lottie_col
 styleable MaterialButton android_insetLeft android_insetRight android_insetTop android_insetBottom backgroundTint backgroundTintMode cornerRadius icon iconGravity iconPadding iconSize iconTint iconTintMode rippleColor strokeColor strokeWidth
 styleable MaterialCardView strokeColor strokeWidth
 styleable MaterialComponentsTheme bottomSheetDialogTheme bottomSheetStyle chipGroupStyle chipStandaloneStyle chipStyle colorAccent colorBackgroundFloating colorPrimary colorPrimaryDark colorSecondary editTextStyle floatingActionButtonStyle materialButtonStyle materialCardViewStyle navigationViewStyle scrimBackground snackbarButtonStyle tabStyle textAppearanceBody1 textAppearanceBody2 textAppearanceButton textAppearanceCaption textAppearanceHeadline1 textAppearanceHeadline2 textAppearanceHeadline3 textAppearanceHeadline4 textAppearanceHeadline5 textAppearanceHeadline6 textAppearanceOverline textAppearanceSubtitle1 textAppearanceSubtitle2 textInputStyle
+styleable MaterialRippleLayout mrl_rippleAlpha mrl_rippleBackground mrl_rippleColor mrl_rippleDelayClick mrl_rippleDimension mrl_rippleDuration mrl_rippleFadeDuration mrl_rippleHover mrl_rippleInAdapter mrl_rippleOverlay mrl_ripplePersistent mrl_rippleRoundedCorners
 styleable MenuGroup android_enabled android_id android_visible android_menuCategory android_orderInCategory android_checkableBehavior
 styleable MenuItem android_icon android_enabled android_id android_checked android_visible android_menuCategory android_orderInCategory android_title android_titleCondensed android_alphabeticShortcut android_numericShortcut android_checkable android_onClick actionLayout actionProviderClass actionViewClass alphabeticModifiers contentDescription iconTint iconTintMode numericModifiers showAsAction tooltipText
 styleable MenuView android_windowAnimationStyle android_itemTextAppearance android_horizontalDivider android_verticalDivider android_headerBackground android_itemBackground android_itemIconDisabledAlpha preserveIconSpacing subMenuArrow

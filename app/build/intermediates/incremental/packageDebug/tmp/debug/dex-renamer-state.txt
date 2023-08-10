@@ -1,4 +1,4 @@
-#Tue Jun 28 18:45:59 IRDT 2022
+#Thu Aug 10 16:57:56 AFT 2023
 base.1=C\:\\Users\\Erfan.computer\\Documents\\android app\\Airqual-master\\Airqual-master\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out
 path.1=classes.dex
 base.0=C\:\\Users\\Erfan.computer\\Documents\\android app\\Airqual-master\\Airqual-master\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
